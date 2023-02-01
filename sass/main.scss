@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Roboto:700,400,500,300');
 //color
 $card_red: #EB0028;
 $card_grey: #929292;
@@ -18,7 +18,7 @@ $container_width: 72.5rem;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 1000vh;
   padding-top: 140px;
 }
@@ -70,12 +70,13 @@ section{
     justify-content: center;
     padding:1rem 0 1rem 0;
     border-bottom: 1px solid #E9E9E9;
+    position: relative;
     >li {
       list-style: none;
+
       >a{
         text-decoration: none;
-        display: inline-block;
-        position: relative;
+        display: flex;
         align-items: center;
         color: #0e2431;
         font-weight: 500;
@@ -86,13 +87,13 @@ section{
           padding-left: 4px;
         }
         }
-
-      }
       &:hover{
         .dropdown-content{
           display: block;
         }
       }
+      }
+
       .dropdown-content {
         display: none;
         position: absolute;
